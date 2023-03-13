@@ -7,10 +7,10 @@ config = {
     #########################
 
     # WIFI Network SSID
-    'wifi_ssid': 'Pretty_fly_for_a_wifi',
+    'wifi_ssid': '<Your 2.4ghz WiFi SSID>',
     
     # WIFI Password
-    'wifi_password': 'Panic!_at_the_cisco',
+    'wifi_password': '<Your wifi password>',
 
     #########################
     # Metro Configuration   #
