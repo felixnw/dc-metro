@@ -64,11 +64,13 @@ This project contains the source code to create your own Washington DC Metro sig
 
     ![Lib Decompressed](img/lib.png)
 
-4. Copy all of the Python files from _src_ in this repository into the root of the _CIRCUITPY_ volume.
+4. Download this repository as a ZIP file by selecting the green 'Code' button at the top of this page, and then unzip the file.
+
+5. Copy all of the Python files from the downloaded repository into the root of the _CIRCUITPY_ volume, and also copy _Metroesque.bdf_ into the _lib_ folder referred to earler.
 
     ![Source Files](img/source.png)
 
-5. The board should now light up with a loading screen, but we've still got some work to do.
+6. The board should now light up with a loading screen, but we've still got some work to do.
 
     ![Loading Sign](img/loading.jpg)
 
