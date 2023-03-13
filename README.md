@@ -1,7 +1,9 @@
 # Washington DC Metro Train Sign
 This project contains the source code to create your own Washington DC Metro sign. It was written using CircuitPython targeting the [Adafruit Matrix Portal](https://www.adafruit.com/product/4745) and is optimized for 64x32 RGB LED matrices.
 
-![Board Showing Train Arriving](img/board.gif)
+![bd1](https://user-images.githubusercontent.com/125122551/224591079-6904d7d4-879b-4ac9-ad41-90df8c724c7f.jpg)
+![bd2](https://user-images.githubusercontent.com/125122551/224591080-dc499aee-a243-4056-9c60-d34f50b6cb7a.jpg)
+![bd3](https://user-images.githubusercontent.com/125122551/224591081-359ed584-2a4f-4d4a-945f-53a0f6cf5f11.jpg)
 
 # How To
 ## Hardware
@@ -20,7 +22,7 @@ This project contains the source code to create your own Washington DC Metro sig
 - Tape _(optional)_
 
 ## Part 1: Prepare the Board
-1. Use a hot glue gun to cover the sharp screws on the right-hand side of the 64x32 LED matrix. This step is optional, but it will prevent wire chafing later on.
+1. Use a hot glue gun to cover the sharp screws on the right-hand side of the 64x32 LED matrix, if present. This step is optional, but it will prevent wire chafing later on.
 
     ![64x32 Matrix with Hot Glue on Screws](img/base-board.jpg)
 
@@ -41,16 +43,16 @@ This project contains the source code to create your own Washington DC Metro sig
 
     ![64x32 Matrix with Power Connected](img/connected-board.jpg)
 
-6. You can use masking tape (or painter's tape) to prevent the cables from flopping around.
+6. You can use tape or zip ties to prevent the cables from flopping around.
 
     ![64x32 Matrix with Cable Management](img/cable-management.jpg)
 
 ## Part 2: Loading the Software
-1. Connect the board to your computer using a USB C cable. Double click the button on the board labeled _RESET_. The board should mount onto your computer as a storage volume, most likely named _MATRIXBOOT_.
+1. Connect the board to your computer using a USB-C cable. Double click the button on the board labeled _RESET_. The board should mount onto your computer as a storage volume, most likely named _MATRIXBOOT_.
     
     ![Matrix Connected via USB](img/usb-connected.jpg)
 
-2. Flash your _Matrix Portal_ with the latest release of CircuitPython 6.
+2. Flash your _Matrix Portal_ with the latest release of CircuitPython 8.
     - Download the [firmware from Adafruit](https://circuitpython.org/board/matrixportal_m4/).
     - Drag the downloaded _.uf2_ file into the root of the _MATRIXBOOT_ volume.
     - The board will automatically flash the version of CircuitPython and remount as _CIRCUITPY_.
@@ -123,6 +125,7 @@ If something goes wrong, take a peek at the [Adafruit Documentation](https://lea
 | Anacostia                                        | GR         | F06  |
 | Archives-Navy Memorial-Penn Quarter              | GR, YL     | F02  |
 | Arlington Cemetery                               | BL         | C06  |
+| Ashburn                                          | SV         | N12  |
 | Ballston-MU                                      | OR, SV     | K04  |
 | Benning Road                                     | BL, SV     | G01  |
 | Bethesda                                         | RD         | A09  |
@@ -140,6 +143,7 @@ If something goes wrong, take a peek at the [Adafruit Documentation](https://lea
 | Court House                                      | OR, SV     | K01  |
 | Crystal City                                     | BL, YL     | C09  |
 | Deanwood                                         | OR         | D10  |
+| Downtown Largo                                   | BL, SV     | G05  |
 | Dunn Loring-Merrifield                           | OR         | K07  |
 | Dupont Circle                                    | RD         | A03  |
 | East Falls Church                                | OR, SV     | K05  |
@@ -162,13 +166,16 @@ If something goes wrong, take a peek at the [Adafruit Documentation](https://lea
 | Greenbelt                                        | GR         | E10  |
 | Greensboro                                       | SV         | N03  |
 | Grosvenor-Strathmore                             | RD         | A11  |
+| Herndon                                          | SV         | N08  |
 | Huntington                                       | YL         | C15  |
+| Hyattsville Crossing                             | GR         | E08  |
+| Innovation Center                                | SV         | N09  |
 | Judiciary Square                                 | RD         | B02  |
 | King St-Old Town                                 | BL, YL     | C13  |
+| Landover                                         | OR         | D12  |
 | L'Enfant Plaza                                   | BL, OR, SV | D03  |
 | L'Enfant Plaza                                   | GR, YL     | F03  |
-| Landover                                         | OR         | D12  |
-| Largo Town Center                                | BL, SV     | G05  |
+| Loudon Gateway                                   | SV         | N11  |
 | McLean                                           | SV         | N01  |
 | McPherson Square                                 | BL, OR, SV | C02  |
 | Medical Center                                   | RD         | A10  |
@@ -181,10 +188,11 @@ If something goes wrong, take a peek at the [Adafruit Documentation](https://lea
 | Naylor Road                                      | GR         | F09  |
 | New Carrollton                                   | OR         | D13  |
 | NoMa-Gallaudet U                                 | RD         | B35  |
+| North Bethesda                                   | RD         | A12  |
 | Pentagon                                         | BL, YL     | C07  |
 | Pentagon City                                    | BL, YL     | C08  |
 | Potomac Ave                                      | BL, OR, SV | D07  |
-| Prince George's Plaza                            | GR         | E08  |
+| Reston Town Center                               | SV         | N07  |
 | Rhode Island Ave-Brentwood                       | RD         | B04  |
 | Rockville                                        | RD         | A14  |
 | Ronald Reagan Washington National Airport        | BL, YL     | C10  |
@@ -200,31 +208,20 @@ If something goes wrong, take a peek at the [Adafruit Documentation](https://lea
 | Takoma                                           | RD         | B07  |
 | Tenleytown-AU                                    | RD         | A07  |
 | Twinbrook                                        | RD         | A13  |
-| Tysons Corner                                    | SV         | N02  |
+| Tysons                                           | SV         | N02  |
 | U Street/African-Amer Civil War Memorial/Cardozo | GR, YL     | E03  |
 | Union Station                                    | RD         | B03  |
 | Van Dorn Street                                  | BL         | J02  |
 | Van Ness-UDC                                     | RD         | A06  |
 | Vienna/Fairfax-GMU                               | OR         | K08  |
 | Virginia Square-GMU                              | OR, SV     | K03  |
+| Washington Dulles International Airport          | SV         | N10  |
 | Waterfront                                       | GR         | F04  |
-| West Falls Church-VT/UVA                         | OR         | K06  |
+| West Falls Church                                | OR         | K06  |
 | West Hyattsville                                 | GR         | E07  |
 | Wheaton                                          | RD         | B10  |
-| White Flint                                      | RD         | A12  |
 | Wiehle-Reston East                               | SV         | N06  |
 | Woodley Park-Zoo/Adams Morgan                    | RD         | A04  |
-
-## DC Metro Silver Line Phase II Stations
-A special thanks to [u/SandBoxJohn](https://www.reddit.com/user/SandBoxJohn) for these.
-| Name                                             | Lines      | Code |
-|--------------------------------------------------|------------|------|
-| Reston Town Center                               | SV         | N07  |
-| Herndon                                          | SV         | N08  |
-| Innovation Center                                | SV         | N09  |
-| Dulles Airport                                   | SV         | N10  |
-| Loudoun Gateway                                  | SV         | N11  |
-| Ashburn                                          | SV         | N12  |
 
 ## Train Group Explanations
 A special thanks to [u/SandBoxJohn](https://www.reddit.com/user/SandBoxJohn) for these.
@@ -233,7 +230,7 @@ A special thanks to [u/SandBoxJohn](https://www.reddit.com/user/SandBoxJohn) for
 | RD         | "1"         | Glenmont                                               |
 | RD         | "2"         | Shady Grove                                            |
 | BL, OR, SV | "1"         | New Carrollton, Largo Town Center                      |
-| BL, OR, SV | "2"         | Vienna, Franconia-Springfield, Wiehle-Reston East      |
+| BL, OR, SV | "2"         | Vienna, Franconia-Springfield, Ashburn      |
 | GR, YL     | "1"         | Greenbelt                                              |
 | GR, YL     | "2"         | Huntington, Branch Avenue                              |
 | N/A        | "3"         | Center Platform at National Airport, West Falls Church |
