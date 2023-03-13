@@ -20,6 +20,7 @@ This project contains the source code to create your own Washington DC Metro sig
 - A small phillips head screwdriver
 - A hot glue gun _(optional)_
 - Tape _(optional)_
+- Zip ties _(optional)_
 
 ## Part 1: Prepare the Board
 1. Use a hot glue gun to cover the sharp screws on the right-hand side of the 64x32 LED matrix, if present. This step is optional, but it will prevent wire chafing later on.
