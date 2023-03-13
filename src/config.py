@@ -51,7 +51,7 @@ config = {
     'num_trains': 3,
     'font': bitmap_font.load_font('lib/Metroesque.bdf'),
     # Metroesque font characters are GENERALLY 5px wide (including 1px for left padding) but are 
-    # always 7px tall
+    # always 7px tall.
     #   M, m, T, V, v, W, w, & Y are 6px wide
     #   I, i, & l are 4px wide
     #   Space is 2px wide
