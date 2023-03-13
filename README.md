@@ -109,7 +109,7 @@ This project contains the source code to create your own Washington DC Metro sig
 'wifi_ssid': 'Pretty_fly_for_a_wifi',
 
 # WIFI Password
-'wifi_password': 'Panic_at_the_Cisco',
+'wifi_password': 'Panic!_at_the_cisco',
 
 #########################
 # Metro Configuration   #
