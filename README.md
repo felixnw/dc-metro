@@ -76,17 +76,27 @@ This project contains the source code to create your own Washington DC Metro sig
 
 ## Part 3: Getting a WMATA API Key
 1. Create a WMATA developer account on [WMATA's Developer Website](https://developer.wmata.com/signup/).
+
 2. After your account is created, add the _Default Tier_ subscription to your account on [this page](https://developer.wmata.com/products/5475f1b0031f590f380924fe).
+
 3. After doing this, you will be redirected to [your profile](https://developer.wmata.com/developer).
+
 4. Under the _Subscriptions_ section on your profile, select the **show** button beside the _Primary Key_. This is the key that allows the board to communicate with WMATA.
 
 ## Part 4: Configuring the Board
 1. Open the [config.py](src/config.py) file located in the root of the _CIRCUITPY_ volume.
+
 2. Fill in your WiFi SSID and password under the **Network Configuration** section.
+
 3. Under the **Metro Configuration** section:
-    1. Select your station and lines from the [Metro Station Codes table](#dc-metro-station-codes), and set the _metro_station_code_ value to the corresponding value in the table.
-    2. For _train_group_, the value needs to be either **'1'** or **'2'** or  **'3'**. This determines which platform's arrival times will be displayed. These typically fall in line with the values provided in the [Train Group table](#train-group-explanations), although single tracking and other events can cause these to change.
-    3. Set the _metro_api_key_ value to the API key you got from [Part 3](#part-3-getting-a-wmata-api-key).
+    - Select your station and lines from the [Metro Station Codes table](#dc-metro-station-codes), and set the _metro_station_code_ value to the corresponding value in the table.
+    
+    - For _train_group_, the value needs to be either **'1'** or **'2'** or  **'3'**. This determines which platform's arrival times will be displayed. These typically fall in line with the values provided in the [Train Group table](#train-group-explanations), although single tracking and other events can cause these to change.
+    
+    - For _show_all_groups_if_nothing_else, the value needs to be either ***True*** or ***False***. This determines what the board should do if there are no trains with assigned lines in your selected group. If True, the board will attempt to show results from all groups instead. This can help during single-tracking, when one group is temporarily reassigned to the other. If False, it will show the results from the selected group, which at most will consist of 'No Psngr' trains with no assigned lines.
+    
+    - Set the _metro_api_key_ value to the API key you got from [Part 3](#part-3-getting-a-wmata-api-key).
+
 4. At the end, the first part of your configuration file should look similar this:
 
 ```python
@@ -95,10 +105,10 @@ This project contains the source code to create your own Washington DC Metro sig
 #########################
 
 # WIFI Network SSID
-'wifi_ssid': 'Grindr Pickup Zone',
+'wifi_ssid': 'Pretty_fly_for_a_wifi',
 
 # WIFI Password
-'wifi_password': 'MyMetroBoardBringsTheBoisToTheNavyYard',
+'wifi_password': 'Panic_at_the_Cisco',
 
 #########################
 # Metro Configuration   #
@@ -109,6 +119,9 @@ This project contains the source code to create your own Washington DC Metro sig
 
 # Metro Train Group
 'train_group': '2',
+
+# Show All Groups If Nothing Else to Show
+'show_all_groups_if_nothing_else': True,
 
 # API Key for WMATA
 'metro_api_key': 'd3adb33fd3adb33fd3adb33f',
