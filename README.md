@@ -2,8 +2,8 @@
 This project contains the source code to create your own Washington DC Metro sign. It was written using CircuitPython targeting the [Adafruit Matrix Portal](https://www.adafruit.com/product/4745) and is optimized for 64x32 RGB LED matrices.
 
 ![bd1](img/bd1.jpg)
-![bd2](img/bd1.jpg)
-![bd3](img/bd1.jpg)
+![bd2](img/bd2.jpg)
+![bd3](img/bd3.jpg)
 
 # How To
 ## Hardware
