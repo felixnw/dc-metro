@@ -17,13 +17,14 @@ config = {
     #########################
 
     # Metro Station Code
-    # See [] for a list of stations. 
+    # See https://github.com/GJT-34/dc-metro/blob/main/README.md for a list of stations. 
     # Arrival information for up to two stations can be displayed.
     'metro_station_code': 'A01', 
 
     # Metro Train Group
     # 'Group' is loosely a synonym for track.
-    # See [] for a list of which groups correspond to which destinations on each line.
+    # See https://github.com/GJT-34/dc-metro/blob/main/README.md for a list of which groups 
+    # correspond to which destinations on each line.
     'train_group': '1',
 
     # Show All Groups If Nothing Else to Show
