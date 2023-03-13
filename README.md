@@ -73,7 +73,7 @@ This project contains the source code to create your own Washington DC Metro sig
 
 6. The board should now light up with a loading screen, but we've still got some work to do.
 
-    ![Loading Sign](img/loading.jpg)
+    ![Loading Sign](img/bd4.jpg)
 
 ## Part 3: Getting a WMATA API Key
 1. Create a WMATA developer account on [WMATA's Developer Website](https://developer.wmata.com/signup/).
