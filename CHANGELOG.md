@@ -12,3 +12,7 @@ All notable changes to this project will be documented in this file.
 - Note: The additions do not include changes from the [Scottie Garcia fork](https://github.com/scottiegarcia/dc-metro) (i.e., multiple station support, walk time filtering, optional off hours configuration, and MetroHero API Support)
 - Updated CircuitPython references to CircuitPython 8 in the README
 - Updated list of Metro stations in the README to reflect changed names and additional Silver Line stations
+
+## [1.0.1] - 2023-03-18
+
+- Updated metro_api.py with additional corrections to standardize the 'Destination' reported by the WMATA API
