@@ -53,6 +53,8 @@ class TrainBoard:
         # If we have successfully received our data from API, then update train info based on 
         # what we received
         if train_data:
+            # Turn on screen and set brightness to full
+            self.display.brightness = 1
             print("Reply received.")
             for i in range(config['num_trains']):
                 if i < len(train_data):
@@ -69,6 +71,8 @@ class TrainBoard:
 
             print("Successfully updated.")
         else:
+            # Turn off screen and set brightness to zero
+            self.display.brightness = 0
             print("No data received. Clearing display.")
 
             for i in range(config['num_trains']):
