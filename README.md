@@ -1,12 +1,17 @@
 # Washington DC Metro Train Sign
 This project contains the source code to create your own Washington DC Metro sign. It was written using CircuitPython targeting the [Adafruit Matrix Portal](https://www.adafruit.com/product/4745) and is optimized for 64x32 RGB LED matrices.
 
+# Differences
+Compared to metro-sign's original version, this branch forks GJT-34 changes that include a better font, car numbers, network error catching, among other improvements. My changes from that version are simply updating the lib files, and adding simple functionality to turn off the display if there are no trains arriving. This means that at night or during maintenance the screen will no longer be on.
+
 ![bd1](img/bd1.jpg)
 ![bd2](img/bd2.jpg)
 ![bd3](img/bd3.jpg)
 
 # How To
 ## Hardware
+- An [Adafruit Matrix Portal Starter Kit](https://www.adafruit.com/product/4812)
+OR
 - An [Adafruit Matrix Portal](https://www.adafruit.com/product/4745) - $24.99
 - A **64x32 RGB LED matrix** compatible with the _Matrix Portal_ - $39.99 _to_ $84.99
     - [64x32 RGB LED Matrix - 3mm pitch](https://www.adafruit.com/product/2279)
@@ -58,20 +63,17 @@ This project contains the source code to create your own Washington DC Metro sig
     - Drag the downloaded _.uf2_ file into the root of the _MATRIXBOOT_ volume.
     - The board will automatically flash the version of CircuitPython and remount as _CIRCUITPY_.
     - If something goes wrong, refer to the [Adafruit Documentation](https://learn.adafruit.com/adafruit-matrixportal-m4/install-circuitpython).
+  
+3. Download this repository as a ZIP file by selecting the green 'Code' button at the top of this page, and then unzip the file.
 
-3. Decompress the _lib.zip_ file from this repository into the root of the _CIRCUITPY_ volume. There should be one folder named _lib_, with a plethora of files underneath. You can delete _lib.zip_ from the _CIRCUITPY_ volume, as it's no longer needed.
+4. Extract the _lib_ folder from _lib.zip_ file from this repository into the root of the _CIRCUITPY_ volume. There should be one folder named _lib_, with a plethora of files underneath.
+    NOTE: If you're doing this in the future with a newer version of CircuitPython, you might need to update these files. If you get an blinking red green light or a console message about .mpy files, then the folders in lib will need to be replaced with current versions from the [CircuitPython site](https://circuitpython.org/libraries)
 
-    - It has been reported that this step may fail ([Issue #2](https://github.com/metro-sign/dc-metro/issues/2)), most likely due to the storage on the Matrix Portal not being able to handle the decompression. If this happens, unzip the _lib.zip_ file on your computer, and copy the _lib_ folder to the Matrix Portal. Command line tools could also be used if the above doesn't work.
-
-    ![Lib Decompressed](img/lib.png)
-
-4. Download this repository as a ZIP file by selecting the green 'Code' button at the top of this page, and then unzip the file.
-
-5. Copy all of the Python files from the downloaded repository into the root of the _CIRCUITPY_ volume, and also copy _Metroesque.bdf_ into the _lib_ folder referred to earler.
+6. Copy all of the Python files from the downloaded repository into the root of the _CIRCUITPY_ volume, and also copy _Metroesque.bdf_ into the _lib_ folder referred to earler.
 
     ![Source Files](img/source.png)
 
-6. The board should now light up with a loading screen, but we've still got some work to do.
+7. The board might now light up with a loading screen or will just be a black screen, but we've still got some work to do.
 
     ![Loading Sign](img/bd4.jpg)
 
